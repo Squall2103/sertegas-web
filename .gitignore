@@ -1,0 +1,4 @@
+*.docx
+capturas_pantalla/
+Thumbs.db
+.DS_Store
