@@ -1,0 +1,1431 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Tipografía */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* Header / Navegación */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+/* Logo Container */
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilo para la imagen del logo de flama */
+.logo-flama {
+    height: 28px;
+    /* Tamaño pequeño como ícono */
+    width: auto;
+    object-fit: contain;
+    margin-top: 2px;
+}
+
+/* Ajustar el h1 del logo */
+.logo h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin: 0;
+    line-height: 1;
+}
+
+/* Ajustes para el tagline */
+.logo .tagline {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    margin-top: 4px;
+    margin-left: 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #e74c3c;
+}
+
+.contact-header .btn-whatsapp-header {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.contact-header .btn-whatsapp-header:hover {
+    background-color: #1da851;
+}
+
+.contact-header .btn-instagram-header {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.3s;
+    margin-left: 10px;
+}
+
+.contact-header .btn-instagram-header:hover {
+    opacity: 0.9;
+}
+
+/* Make header-style contact buttons reusable anywhere (including mobile menu) */
+.btn-whatsapp-header {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn-whatsapp-header:hover {
+    background-color: #1da851;
+}
+
+.btn-instagram-header {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.3s;
+}
+
+.btn-instagram-header:hover {
+    opacity: 0.9;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    cursor: pointer;
+}
+
+/* Mobile/tablet duplicate header (hidden by default) */
+.contact-header-mobile {
+    display: none;
+}
+
+/* nav-contact-mobile hidden by default (only shown inside mobile nav) */
+.nav-contact-mobile {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 150px 0 100px;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('images/hero-bg.jpg') center/100% 100% no-repeat;
+    opacity: 0.25;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    max-width: 700px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #25D366;
+    color: white;
+    border: 2px solid #25D366;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #1da851;
+    border-color: #1da851;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+/* Secciones comunes */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* SERVICIOS COMPLETOS CON IMÁGENES */
+.service-category {
+    margin-bottom: 70px;
+}
+
+/* Reducir espacio después de la última categoría dentro de la sección de servicios */
+.services .service-category:last-of-type {
+    margin-bottom: 10px;
+}
+
+/* Ajuste: reducir padding-bottom específico de la sección servicios para acercar la siguiente sección */
+.services {
+    padding-bottom: 40px;
+    /* antes era el padding global de `section` (80px) */
+}
+
+/* Centrar tarjeta de Certificaciones Bomberos */
+.services .service-category:last-of-type .services-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.services .service-category:last-of-type .service-card {
+    max-width: 450px;
+    width: 100%;
+}
+
+.category-title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e74c3c;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.category-title i {
+    color: #e74c3c;
+}
+
+.category-title.collapsible {
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.category-title.collapsible:hover {
+    padding-left: 10px;
+}
+
+.category-title .toggle-icon {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+    transform: rotate(-90deg);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    transition: all 0.3s ease;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #eaeaea;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+    height: 400px;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.05);
+}
+
+.service-card h4 {
+    color: #2c3e50;
+    margin: 20px 20px 10px;
+    font-size: 1.3rem;
+    min-height: 60px;
+}
+
+.service-card p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0 20px 20px;
+    font-size: 0.95rem;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.service-card.highlight {
+    background: linear-gradient(135deg, #fff8e1, #ffecb3);
+    border: 2px solid #ff9800;
+}
+
+.cert-note {
+    margin: 15px;
+    padding: 15px;
+    background: rgba(255, 193, 7, 0.1);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #5d4037;
+    border-left: 3px solid #ff9800;
+}
+
+/* Sobre Nosotros */
+.about {
+    background-color: #f8f9fa;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-content>p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature {
+    text-align: center;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature i {
+    font-size: 2.2rem;
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+.feature h4 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+/* Contacto SIN FORMULARIO */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+/* Reducir espacio encima de la sección de contacto */
+#contacto {
+    padding-top: 40px;
+    /* override del padding global de `section` */
+}
+
+/* Ajustes finos para eliminar espacio residual arriba de los botones de acción */
+.contact-wrapper {
+    margin-bottom: 0;
+}
+
+#contacto .section-subtitle,
+.status-indicator {
+    margin-bottom: 6px;
+}
+
+.contact-info,
+.contact-text {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.contact-buttons-full {
+    margin-top: 50px !important;
+    padding-top: 4px;
+}
+
+/* Full-width centered location block placed above the two-column contact grid */
+.contact-location-full {
+    max-width: 900px;
+    margin: 20px auto 10px;
+    text-align: center;
+}
+
+.contact-location-full .map-centered {
+    margin-top: 12px;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Heading with icon for location block */
+.contact-location-full h3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-size: 1.15rem;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.contact-location-full h3 i {
+    color: #e74c3c;
+    font-size: 1.2rem;
+}
+
+.contact-info {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.contact-item {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.contact-item.highlight {
+    background: #e8f5e9;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #25D366;
+    margin-bottom: 12px;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: #e74c3c;
+    margin-top: 5px;
+    float: left;
+    margin-right: 20px;
+}
+
+.contact-item.highlight i {
+    color: #25D366;
+}
+
+.contact-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    overflow: hidden;
+}
+
+.contact-item a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-item a:hover {
+    color: #e74c3c;
+}
+
+.phone-main {
+    font-size: 1.4rem !important;
+    color: #25D366 !important;
+    font-weight: 600 !important;
+}
+
+.small-text {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+.small-text i {
+    margin-right: 5px;
+}
+
+.badge-primary {
+    background-color: #25D366;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.secondary-numbers p {
+    margin-bottom: 5px;
+}
+
+.secondary-numbers a {
+    font-size: 1rem !important;
+    color: #555 !important;
+}
+
+.warning-text {
+    color: #f39c12;
+}
+
+.warning-text i {
+    color: #f39c12;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Full-width buttons placed outside the two-column contact layout */
+.contact-buttons-full {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0px auto 40px;
+    /* menos separación arriba, suficiente abajo */
+    padding: 0 10px;
+    gap: 10px;
+    /* botones más juntos */
+}
+
+.contact-buttons-full a {
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: none;
+    /* evitar que se estiren */
+    min-width: 350px;
+    /* ancho aumentado para botones */
+}
+
+.contact-buttons-full a:first-child {
+    justify-self: start;
+}
+
+.contact-buttons-full a:nth-child(2) {
+    justify-self: center;
+}
+
+.contact-buttons-full a:last-child {
+    justify-self: end;
+}
+
+.btn-whatsapp,
+.btn-call {
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1da851;
+}
+
+.btn-call {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-call:hover {
+    background-color: #2980b9;
+}
+
+/* Botón de Instagram */
+.btn-instagram {
+    background: linear-gradient(45deg, #405DE6, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #FFDC80);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s;
+    flex: 1;
+    min-width: 180px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-instagram:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(225, 48, 108, 0.4);
+    color: white;
+}
+
+.btn-instagram:active {
+    transform: translateY(-1px);
+}
+
+.contact-text {
+    background: #f0f7ff;
+    padding: 40px;
+    border-radius: 10px;
+    border-left: 4px solid #3498db;
+}
+
+.contact-text h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.contact-text p {
+    margin-bottom: 15px;
+    color: #444;
+    line-height: 1.6;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.info-box {
+    background: #e3f2fd;
+    border-left: 4px solid #2196f3;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 8px;
+}
+
+.info-box h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-box p {
+    margin: 10px 0;
+    padding-left: 20px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.alert-info {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.alert-info i {
+    color: #ff9800;
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+.alert-info p {
+    margin: 0;
+    color: #856404;
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Footer Logo con imagen */
+.footer-logo h2 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-logo .logo-flama {
+    height: 22px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    /* Hace que el logo sea blanco en el footer */
+}
+
+.footer-tagline {
+    color: #bdc3c7;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: #bdc3c7;
+}
+
+.footer-contact i {
+    width: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #34495e;
+    color: #95a5a6;
+    font-size: 0.9rem;
+}
+
+.disclaimer {
+    margin-top: 15px;
+    font-style: italic;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Indicador de horario */
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 10px auto 30px;
+    font-weight: 500;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.status-indicator.open {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-indicator.closed {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.status-indicator i {
+    font-size: 0.9rem;
+}
+
+/* Logo en títulos de sección */
+.logo-flama-title {
+    height: 36px;
+    /* Un poco más grande para títulos */
+    width: auto;
+    object-fit: contain;
+    margin-left: 8px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+/* Ajustar la alineación del título con el logo */
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Mantener el título centrado cuando tiene logo */
+.about .section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .logo-flama-title {
+        height: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-flama-title {
+        height: 28px;
+    }
+
+    .about .section-title {
+        gap: 8px;
+    }
+
+    .logo h1 {
+        font-size: 1.4rem;
+    }
+
+    .logo .tagline {
+        font-size: 0.7rem;
+    }
+
+    .contact-header {
+        display: none !important;
+    }
+
+    .menu-toggle {
+        display: block !important;
+        font-size: 1.3rem;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        z-index: 1005;
+        /* asegurar que el menú desplegable quede sobre la barra de botones */
+    }
+
+    /* Show the contact block placed inside the nav for mobile (under 'Contacto') */
+    .nav-contact-mobile {
+        display: block;
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .nav-contact-mobile .contact-header-mobile {
+        display: flex !important;
+        flex-direction: column;
+        gap: 8px;
+        padding: 8px 0;
+    }
+
+    .nav-contact-mobile .btn-whatsapp-header,
+    .nav-contact-mobile .btn-instagram-header {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 10px 14px;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        margin: 0;
+    }
+
+    .nav-contact-mobile .btn-instagram-header {
+        margin-top: 6px;
+    }
+
+    /* Centrar texto y forzar color blanco en los botones dentro del menú móvil (solo responsive) */
+    .nav-contact-mobile .btn-whatsapp-header,
+    .nav-contact-mobile .btn-instagram-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff !important;
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    .nav-contact-mobile .btn-whatsapp-header i,
+    .nav-contact-mobile .btn-instagram-header i {
+        color: #ffffff;
+        margin-right: 8px;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Hide original contact buttons inside nav on small screens */
+    .contact-header {
+        display: none !important;
+    }
+
+    /* Ensure standalone mobile bar is hidden; contact buttons will appear inside the nav menu instead */
+    .contact-header-mobile {
+        display: none;
+    }
+
+    /* Ensure the mobile menu overlay appears above the contact-header-mobile */
+    .nav-links.active {
+        z-index: 1005;
+    }
+
+    /* Removed duplicated fixed positioning for .contact-header to keep header buttons hidden in mobile. */
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card h4 {
+        min-height: auto;
+        margin: 15px 15px 10px;
+        font-size: 1.1rem;
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+        margin: 0 15px 15px;
+        line-height: 1.5;
+    }
+
+    .contact-buttons-full {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 6px;
+        margin: 12px auto 40px;
+        padding: 0 5px;
+        max-width: 100%;
+    }
+
+    .contact-buttons-full a {
+        min-width: auto;
+        padding: 10px 6px;
+        font-size: 0.75rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .contact-buttons-full a i {
+        margin-right: 3px;
+    }
+
+    .service-image {
+        height: 220px;
+        /* Reduce altura en tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-flama-title {
+        height: 24px;
+    }
+
+    .about .section-title {
+        gap: 6px;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .logo .tagline {
+        font-size: 0.65rem;
+    }
+
+    .menu-toggle {
+        display: block !important;
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        padding: 120px 0 80px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .category-title {
+        font-size: 1.4rem;
+    }
+
+    .contact-buttons-full {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin: 12px auto 40px;
+        padding: 0 10px;
+    }
+
+    .contact-buttons-full a {
+        min-width: 100%;
+        padding: 12px 15px;
+        font-size: 0.9rem;
+        width: 100%;
+        white-space: normal;
+    }
+
+    .contact-buttons-full a i {
+        margin-right: 8px;
+    }
+
+    .service-image {
+        height: 180px;
+        /* Reduce más en móviles */
+    }
+
+    .service-card h4 {
+        font-size: 1rem;
+        margin: 12px 12px 8px;
+        min-height: auto;
+    }
+
+    .service-card p {
+        font-size: 0.85rem;
+        margin: 0 12px 12px;
+        line-height: 1.5;
+    }
+
+    /* Responsive para el logo */
+    @media (max-width: 768px) {
+        .logo-flama {
+            height: 24px;
+        }
+
+        .footer-logo .logo-flama {
+            height: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .logo-flama {
+            height: 20px;
+        }
+
+        .footer-logo .logo-flama {
+            height: 18px;
+        }
+    }
+
+}
+
+/* =========================================
+   Sección Destacados (Calentadores y Hermeticidad)
+   ========================================= */
+.featured-section {
+    background-color: #ffff;
+    padding: 80px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.feature-block {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+.feature-block:last-child {
+    margin-bottom: 0;
+}
+
+/* Reverse layout for the second block */
+.feature-block.feature-reverse {
+    flex-direction: row-reverse;
+}
+
+/* Imagen Container */
+.feature-image {
+    flex: 1;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.feature-image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.feature-block:hover .feature-image img {
+    transform: scale(1.03);
+}
+
+/* Contenido de texto */
+.feature-content {
+    flex: 1;
+}
+
+.feature-content h3 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.feature-content h3 i {
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.1);
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.feature-content p {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* Highlight Box (Hermeticidad) */
+.info-highlight {
+    background: #e8f5e9;
+    border-left: 5px solid #2ecc71;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+
+.info-highlight p {
+    margin: 0;
+    color: #27ae60;
+    font-weight: 500;
+}
+
+.info-highlight i {
+    margin-right: 10px;
+}
+
+/* CTA Box (Calentadores) */
+.feature-cta {
+    margin-top: 35px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.small-cta {
+    font-size: 0.9rem !important;
+    color: #999 !important;
+    margin-top: 15px !important;
+    margin-bottom: 0 !important;
+}
+
+/* Video Styles */
+.feature-media-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-video {
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.feature-video video {
+    width: 100%;
+    display: block;
+}
+
+.video-caption {
+    background: #2c3e50;
+    color: white !important;
+    padding: 10px 20px;
+    font-size: 0.9rem !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+
+    .feature-block,
+    .feature-block.feature-reverse {
+        flex-direction: column;
+        gap: 40px;
+        text-align: left;
+        /* Align text left like on desktop, or center if preferred */
+    }
+
+    .feature-image {
+        width: 100%;
+        max-width: 600px;
+        /* Limit image width on tablet */
+        margin: 0 auto;
+    }
+
+    .feature-media-group {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-section {
+        padding: 50px 0;
+    }
+
+    .feature-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .feature-image {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+}

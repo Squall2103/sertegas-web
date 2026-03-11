@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertegas - Servicio Técnico de Gas</title>
+    <meta name="description"
+        content="Servicio técnico de gas en Panamá. Instalación, reparación y mantenimiento de líneas de gas residenciales, comerciales e industriales.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/logo-flama.ico">
+</head>
+
+<body>
+    <!-- Header / Navegación -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <div class="logo-container">
+                    <h1>SERTEGAS</h1>
+                    <img src="images/logo-flama.png" alt="Logo Sertegas" class="logo-flama">
+                </div>
+                <p class="tagline">Servicio Técnico de Gas • Panama City</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <!-- Mobile-only: contact buttons shown inside hamburger under 'Contacto' -->
+                <li class="nav-contact-mobile">
+                    <a href="#" class="nav-sep" aria-hidden="true"></a>
+                    <div class="contact-header-mobile">
+                        <a href="https://wa.me/50762164376" target="_blank" class="btn-whatsapp-header">
+                            <i class="fab fa-whatsapp"></i> WhatsApp: 6216-4376
+                        </a>
+                        <a href="https://www.instagram.com/sertegaspty/" target="_blank" class="btn-instagram-header">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div class="contact-header">
+                <a href="https://wa.me/50762164376" target="_blank" class="btn-whatsapp-header">
+                    <i class="fab fa-whatsapp"></i> WhatsApp: 6216-4376
+                </a>
+                <a href="https://www.instagram.com/sertegaspty/" target="_blank" class="btn-instagram-header">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero / Banner Principal -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Instalaciones a Casa Certificadas</h2>
+                <p class="hero-subtitle">Empresa con mano de obra panameña, certificada debidamente registrada para
+                    instalaciones con mayor seguridad de equipos y sistemas a gas.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/50762164376" target="_blank" class="btn-primary">
+                        <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                    </a>
+                    <a href="#servicios" class="btn-secondary">Ver servicios</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Destacados: Calentadores y Hermeticidad -->
+    <section class="featured-section" id="destacados">
+        <div class="container">
+            <h2 class="section-title">Servicios Destacados</h2>
+            <p class="section-subtitle">Soluciones profesionales para su hogar y negocio</p>
+
+            <!-- Bloque 1: Calentadores (Imagen Izq - Texto Der) -->
+            <div class="feature-block">
+                <div class="feature-image">
+                    <img src="images/servicios/calentador-destacado.jpg"
+                        alt="Instalación de Calentador de Agua Sertegas">
+                </div>
+                <div class="feature-content">
+                    <h3><i class="fas fa-shower"></i> Instalación de Calentadores de Agua</h3>
+                    <p>En <strong>Sertegas</strong> brindamos el servicio profesional de instalación de calentadores de
+                        agua, asegurando conexiones seguras, eficientes y duraderas para sistemas de agua y gas.
+                        Utilizamos material <strong>Coflex</strong> de alta calidad, reconocido por su resistencia y
+                        confiabilidad, garantizando una instalación que cumple con los más altos estándares técnicos y
+                        de seguridad.</p>
+                    <p>Nuestro equipo técnico realiza cada instalación bajo estrictos protocolos de seguridad,
+                        verificando presión, sellos y funcionamiento, y cumpliendo con las normativas aplicables, para
+                        ofrecerle tranquilidad, eficiencia y un desempeño óptimo del equipo.</p>
+                    <div class="feature-cta">
+                        <a href="https://wa.me/50762164376" target="_blank" class="btn-primary">
+                            <i class="fab fa-whatsapp"></i> Solicite su cotización
+                        </a>
+                        <p class="small-cta">Contáctenos y asegure una instalación segura y garantizada.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bloque 2: Hermeticidad (Texto Izq - Imagen Der) -->
+            <div class="feature-block feature-reverse">
+                <div class="feature-content">
+                    <h3><i class="fas fa-tachometer-alt"></i> Prueba de Hermeticidad en Sistemas de Gas</h3>
+                    <p>Realizamos pruebas de hermeticidad para verificar que las instalaciones de gas residenciales y
+                        comerciales no presenten fugas y cumplan con los estándares de seguridad establecidos por la
+                        <strong>NFPA</strong>, especialmente la NFPA 54 (National Fuel Gas Code) y NFPA 58 (LP-Gas
+                        Code).</p>
+                    <p>El procedimiento consiste en la presurización controlada del sistema con aire o gas inerte,
+                        manteniendo la presión durante el tiempo exigido por la normativa, y verificando la ausencia de
+                        caídas de presión o indicios de fuga.</p>
+                    <div class="info-highlight">
+                        <p><i class="fas fa-info-circle"></i> Este ensayo es obligatorio previo a la puesta en servicio,
+                            modificaciones o preinspecciones.</p>
+                    </div>
+                </div>
+                <div class="feature-media-group">
+                    <div class="feature-image">
+                        <img src="images/servicios/hermeticidad-destacado.jpg" alt="Prueba de Hermeticidad Manómetro">
+                    </div>
+                    <!-- Video Placeholder -->
+                    <div class="feature-video">
+                        <video controls poster="images/poster-video.jpg">
+                            <source src="images/servicios/video-hermeticidad.mp4" type="video/mp4">
+                            Su navegador no soporta el elemento de video.
+                        </video>
+                        <p class="video-caption"><i class="fas fa-play-circle"></i> Demostración de prueba de presión
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios COMPLETOS (servicios) -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-subtitle">Ofrecemos servicios especializados para todas sus necesidades de gas</p>
+
+            <!-- Categoría 1: INSTALACIONES -->
+            <div class="service-category">
+                <h3 class="category-title collapsible" onclick="toggleCategory(this)">
+                    <i class="fas fa-wrench"></i> Instalaciones Profesionales
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </h3>
+                <div class="services-grid" style="display: none;">
+                    <!-- Servicio 1 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/instalacion-tuberias.jpg" alt="Instalación de tuberías de gas"
+                                loading="lazy">
+                        </div>
+                        <h4>Instalación de Tuberías</h4>
+                        <p>Contamos con personal idóneo para realizar cualquier tipo de instalación con tuberías y
+                            accesorios Pex y galvanizada.</p>
+                    </div>
+
+                    <!-- Servicio 2 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/lineas-gas-general.jpg" alt="Instalación de líneas de gas"
+                                loading="lazy">
+                        </div>
+                        <h4>Líneas de Gas (General)</h4>
+                        <p>Instalación de líneas de gas para residencias, industrias, edificios y locales comerciales
+                            con productos garantizados.</p>
+                    </div>
+
+                    <!-- Servicio 3 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/residencial.jpg" alt="Líneas de gas residencial" loading="lazy">
+                        </div>
+                        <h4>Líneas Residenciales</h4>
+                        <p>Para nosotros la seguridad de su familia es primero, con apego a las normas del Cuerpo de
+                            Bomberos de Panamá.</p>
+                    </div>
+
+                    <!-- Servicio 4 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/comercial.jpg" alt="Líneas de gas comercial" loading="lazy">
+                        </div>
+                        <h4>Líneas Comerciales</h4>
+                        <p>Instalación para locales comerciales con productos 100% garantizados para la seguridad de sus
+                            clientes.</p>
+                    </div>
+
+                    <!-- Servicio 5 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/industrial.jpg" alt="Líneas de gas industrial" loading="lazy">
+                        </div>
+                        <h4>Líneas Industriales</h4>
+                        <p>Sistemas para industrias con personal altamente calificado en conocimiento y experiencia del
+                            sector.</p>
+                    </div>
+
+                    <!-- Servicio 6 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/tanque-25lb.jpg" alt="Tanque de gas 25 Lb" loading="lazy">
+                        </div>
+                        <h4>Tanques de Gas 25 Lb</h4>
+                        <p>Instalaciones de tanque y reguladores de gas de 25 lb para Residencias con mantenimiento
+                            preventivo incluido.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría 2: EQUIPOS ESPECÍFICOS -->
+            <div class="service-category">
+                <h3 class="category-title collapsible" onclick="toggleCategory(this)">
+                    <i class="fas fa-fire"></i> Instalación de Equipos
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </h3>
+                <div class="services-grid" style="display: none;">
+                    <!-- Servicio 7 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/calentadores.jpg" alt="Instalación de calentadores"
+                                loading="lazy">
+                        </div>
+                        <h4>Calentadores</h4>
+                        <p>Instalación de calentadores a gas con profesionales especializados y certificados.</p>
+                    </div>
+
+                    <!-- Servicio 8 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/calentadores-pared.jpg" alt="Calentadores de pared"
+                                loading="lazy">
+                        </div>
+                        <h4>Calentadores de Pared</h4>
+                        <p>Instalación profesional de calentadores de pared para espacios reducidos.</p>
+                    </div>
+
+                    <!-- Servicio 9 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/estufas.jpg" alt="Instalación de estufas" loading="lazy">
+                        </div>
+                        <h4>Estufas</h4>
+                        <p>Instalación de estufas con posibilidad de plan de mantenimiento preventivo.</p>
+                    </div>
+
+                    <!-- Servicio 10 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/secadoras.jpg" alt="Instalación de secadoras" loading="lazy">
+                        </div>
+                        <h4>Secadoras</h4>
+                        <p>Instalaciones de secadora para su hogar o local comercial.</p>
+                    </div>
+
+                    <!-- Servicio 11 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/centros-lavado.jpg" alt="Centros de lavado" loading="lazy">
+                        </div>
+                        <h4>Centros de Lavado</h4>
+                        <p>Instalaciones especializadas para centro de lavado con máxima seguridad.</p>
+                    </div>
+
+                    <!-- Servicio 12 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/reguladores-etapa.jpg" alt="Reguladores de segunda etapa"
+                                loading="lazy">
+                        </div>
+                        <h4>Reguladores Segunda Etapa</h4>
+                        <p>Instalación de reguladores de segunda etapa para equipos comerciales con personal idóneo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría 3: MANTENIMIENTO Y REPARACIÓN -->
+            <div class="service-category">
+                <h3 class="category-title collapsible" onclick="toggleCategory(this)">
+                    <i class="fas fa-tools"></i> Mantenimiento y Reparación
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </h3>
+                <div class="services-grid" style="display: none;">
+                    <!-- Servicio 13 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/prueba-hermeticidad.jpg" alt="Prueba de hermeticidad"
+                                loading="lazy">
+                        </div>
+                        <h4>Prueba de Hermeticidad</h4>
+                        <p>Detección de fugas en redes de tuberías mediante pruebas de presión con manómetros
+                            profesionales.</p>
+                    </div>
+
+                    <!-- Servicio 14 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/revision-equipos.jpg" alt="Revisión de equipos de gas"
+                                loading="lazy">
+                        </div>
+                        <h4>Revisión de Equipos</h4>
+                        <p>Inspección de todos los artículos a gas en su hogar por personal idóneo para garantizar
+                            seguridad.</p>
+                    </div>
+
+                    <!-- Servicio 15 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/reparacion-lineas.jpg" alt="Reparación de líneas de gas"
+                                loading="lazy">
+                        </div>
+                        <h4>Reparación de Líneas</h4>
+                        <p>Reparamos, extendemos o modificamos líneas de gas con materiales 100% genuinos y
+                            garantizados.</p>
+                    </div>
+
+                    <!-- Servicio 16 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/purga-limpieza.jpg" alt="Purga y limpieza del sistema"
+                                loading="lazy">
+                        </div>
+                        <h4>Purga y Limpieza</h4>
+                        <p>Limpieza profesional del sistema de gas obstruido en la línea.</p>
+                    </div>
+
+                    <!-- Servicio 17 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/ajuste-presion.jpg" alt="Ajuste de presión" loading="lazy">
+                        </div>
+                        <h4>Ajuste de Presión</h4>
+                        <p>Ajustamos la presión de los reguladores en alta y baja presión para óptimo funcionamiento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría 4: PRODUCTOS -->
+            <div class="service-category" id="productos">
+                <h3 class="category-title collapsible" onclick="toggleCategory(this)">
+                    <i class="fas fa-box-open"></i> Productos
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </h3>
+                <div class="services-grid" style="display: none;">
+                    <!-- Producto 1 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/producto-1.jpg" alt="Producto 1" loading="lazy">
+                        </div>
+                        <h4>Coflex</h4>
+                        <p>Manguera para gas de 3/8″ x 3/8″ 1.50 cm</p>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/producto-2.jpg" alt="Producto 2" loading="lazy">
+                        </div>
+                        <h4>Coflex</h4>
+                        <p>Manguera para gas de 3/8″ x 1/2″ 1.50 cm</p>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/producto-3.jpg" alt="Producto 3" loading="lazy">
+                        </div>
+                        <h4>Coflex (Reguladores)</h4>
+                        <p>Mangueras de 3/8 * ½ para reguladores </p>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/producto-4.jpg" alt="Producto 4" loading="lazy">
+                        </div>
+                        <h4>Coflex</h4>
+                        <p>Mangueras de 3/8 * ½ de 100 cm</p>
+                    </div>
+
+                    <!-- Producto 5 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/producto-5.jpg" alt="Producto 5" loading="lazy">
+                        </div>
+                        <h4>Coflex</h4>
+                        <p>Manguera de ½ * ½ de 50 cm</p>
+                    </div>
+
+                    <!-- Producto 6 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/producto-6.jpg" alt="Producto 6" loading="lazy">
+                        </div>
+                        <h4>Regulador para cilindro</h4>
+                        <p>Reguladores para cilindro de gas de 25 lb. </p>
+                    </div>
+
+                    <!-- Producto 7 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/producto-7.jpg" alt="Producto 7" loading="lazy">
+                        </div>
+                        <h4>Manguera de agua</h4>
+                        <p>Manguera de agua para calentador ½ * 1/2 </p>
+                    </div>
+
+                    <!-- Producto 8 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/producto-8.jpg" alt="Producto 8" loading="lazy">
+                        </div>
+                        <h4>Manguera y regulador</h4>
+                        <p>Manguera y regulador para tanque de 100 LB</p>
+                    </div>
+
+                    <!-- Producto 9 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/servicios/producto-9.jpg" alt="Producto 9" loading="lazy">
+                        </div>
+                        <h4>Ducto</h4>
+                        <p>Ducto de extractor de calor </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoría 4: CERTIFICACIONES -->
+            <div class="service-category">
+                <h3 class="category-title">
+                    <i class="fas fa-certificate"></i> Certificaciones y Trámites
+                </h3>
+                <div class="services-grid">
+                    <!-- Servicio -->
+                    <div class="service-card highlight">
+                        <div class="service-image">
+                            <img src="images/servicios/certificaciones.jpg" alt="Certificaciones bomberos"
+                                loading="lazy">
+                        </div>
+                        <h4>Certificaciones Bomberos</h4>
+                        <p>Certificaciones selladas por el Benemérito Cuerpo de Bomberos. Realizamos trámites para
+                            aprobación.</p>
+                        <div class="cert-note">
+                            <p><strong>Personal certificado:</strong> Los aspirantes a instaladores de gas deben contar
+                                con una licencia de fontaneros emitida por la Junta Técnica, poseer títulos que los
+                                acrediten como plomeros o cursos afines impartidos por el INADEH; carreras a nivel de
+                                ingeniería en las áreas civil, electromecánica, mecánica y sanitaria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Sertegas
+                    <img src="images/logo-flama.png" alt="Logo Sertegas" class="logo-flama-title">
+                </h2>
+                <p>Organización sin fines de lucro dedicada a <strong>instalaciones a casa certificadas</strong> con
+                    mano de obra panameña debidamente registrada.</p>
+
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Seguridad Certificada</h4>
+                        <p>Instalaciones con máxima seguridad avaladas por el Cuerpo de Bomberos.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h4>Mano de Obra Panameña</h4>
+                        <p>Personal idóneo y certificado para garantizar calidad en cada trabajo.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-file-contract"></i>
+                        <h4>Documentación Completa</h4>
+                        <p>Emitimos informes técnicos y certificaciones oficiales de cada instalación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto SIN FORMULARIO -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctenos</h2>
+            <p class="section-subtitle">Para citas y consultas Sertegas PTY - Horario de atención: 8:00 AM a 5:00 PM</p>
+
+            <div class="contact-location-full">
+                <h3><i class="fas fa-map-marker-alt"></i> Ubicación y servicio</h3>
+                <p>Tocumen, Cabuya, Vía Principal, Av. Jose Agustin Arango, Panamá</p>
+                <p class="small-text">Instalaciones a domicilio en todo Panamá</p>
+                <div class="map-centered">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.62998872978!2d-79.3743302!3d9.0974307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e54ab258c8a8563%3A0x59a201d0433470a8!2sServicio%20T%C3%A9cnico%20de%20Gas!5e0!3m2!1ses-419!2spa!4v1765607198442!5m2!1ses-419!2spa"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        title="Mapa de Sertegas PTY">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <!-- WhatsApp PRINCIPAL (destacado) -->
+                    <div class="contact-item highlight">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3><span class="badge-primary">RECOMENDADO</span> WhatsApp Principal</h3>
+                            <a href="https://wa.me/50762164376" class="phone-main">6216-4376</a>
+                            <p class="small-text"><i class="fas fa-bolt"></i> Respuesta más rápida • Presupuestos •
+                                Consultas</p>
+                            <p class="small-text"><i class="fas fa-check-circle"></i> Número activo y verificado</p>
+                        </div>
+                    </div>
+
+                    <!-- Teléfonos secundarios -->
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfonos alternativos</h3>
+                            <div class="secondary-numbers">
+                                <p><a href="tel:+5072959938">295-9938</a></p>
+                                <p><a href="tel:+5072953783">295-3783</a></p>
+                            </div>
+                            <p class="small-text"><i class="fas fa-info-circle"></i> Teléfonos de servicio/automóvil</p>
+                        </div>
+                    </div>
+
+                    <!-- Horario -->
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horario de atención</h3>
+                            <p><strong>Lunes a Sábado:</strong> 7:30 AM - 4:30 PM</p>
+                            <p><strong>Para citas:</strong> 8:00 AM - 5:00 PM</p>
+                            <p><strong>Domingo:</strong> Cerrado</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Información adicional -->
+                <div class="contact-text">
+                    <h3>Instalaciones a Casa Certificadas</h3>
+                    <p><strong>Sertegas PTY</strong> ofrece instalaciones profesionales con certificación garantizada.
+                    </p>
+
+                    <div class="info-box">
+                        <h4><i class="fas fa-mobile-alt"></i> ¿Qué número usar?</h4>
+                        <p><strong>6216-4376 (WhatsApp)</strong> → Para consultas, presupuestos y coordinación</p>
+                        <p><strong>295-9938 / 295-3783</strong> → Teléfonos de servicio para instalaciones</p>
+                    </div>
+
+                    <div class="alert-info">
+                        <i class="fas fa-certificate"></i>
+                        <p><strong>Empresa certificada:</strong> Mano de obra panameña debidamente registrada.
+                            Instalaciones con máxima seguridad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-buttons-full">
+                <a href="https://wa.me/50762164376" target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+                </a>
+
+                <a href="tel:+5072959938" class="btn-call">
+                    <i class="fas fa-phone"></i> Llamar al servicio
+                </a>
+
+                <a href="https://www.instagram.com/sertegaspty/" target="_blank" class="btn-instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>SERTEGAS <img src="images/logo-flama.png" alt="Logo Sertegas" class="logo-flama"></h2>
+                    <p>Servicio Técnico de Gas Certificado</p>
+                    <p class="footer-tagline">Instalaciones a Casa Certificadas</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: 6216-4376</p>
+                    <p><i class="fas fa-phone"></i> Tel: 295-9938 / 295-3783</p>
+                    <p><i class="fas fa-clock"></i> Lun-Sáb: 7:30 AM - 4:30 PM</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. José Agustín Arango</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Sertegas PTY. Todos los derechos reservados.</p>
+                <p class="disclaimer">Organización sin fines de lucro. Instalaciones realizadas por personal certificado
+                    y con materiales 100% garantizados. Certificaciones avaladas por el Benemérito Cuerpo de Bomberos de
+                    Panamá.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Año actual en el footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Función para alternar categorías
+        function toggleCategory(element) {
+            const grid = element.nextElementSibling;
+            const icon = element.querySelector('.toggle-icon');
+
+            // Alternar visibilidad
+            if (grid.style.display === 'none') {
+                grid.style.display = 'grid';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                grid.style.display = 'none';
+                icon.style.transform = 'rotate(-90deg)';
+            }
+        }
+
+        // Menú móvil
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Cerrar menú al hacer clic en enlace
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Scroll suave para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Indicador de horario
+        function updateScheduleInfo() {
+            const now = new Date();
+            const hour = now.getHours();
+            const day = now.getDay(); // 0 = Domingo, 1 = Lunes, etc.
+            const minutes = now.getMinutes();
+
+            // Horario: Lunes a Sábado 7:30 - 16:30
+            const isWeekday = day >= 1 && day <= 6; // Lunes a Sábado
+            const isOpen = isWeekday && hour >= 7 && (hour < 16 || (hour === 16 && minutes <= 30));
+
+            const statusElement = document.createElement('div');
+            statusElement.className = `status-indicator ${isOpen ? 'open' : 'closed'}`;
+            statusElement.innerHTML = `
+                <i class="fas fa-${isOpen ? 'check-circle' : 'clock'}"></i>
+                <span>${isOpen ? 'Abierto ahora' : 'Cerrado ahora'} (Lun-Sáb: 7:30AM-4:30PM)</span>
+            `;
+
+            // Insertar después del título de contacto
+            const contactTitle = document.querySelector('#contacto .section-subtitle');
+            if (contactTitle) {
+                contactTitle.insertAdjacentElement('afterend', statusElement);
+            }
+        }
+
+        // Ejecutar cuando cargue la página
+        document.addEventListener('DOMContentLoaded', updateScheduleInfo);
+    </script>
+</body>
+
+</html>
